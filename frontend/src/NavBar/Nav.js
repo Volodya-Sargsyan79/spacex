@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMenu } from "../store/reducer";
-
-export default function Nav() {
+import { NavLink } from 'react-router-dom';
+import '../style/Nav.scss'
+  
+export default function NavBar() {
     const menu = useSelector((state) => state.data.menu)
     const dispatch = useDispatch()
 
@@ -12,14 +13,12 @@ export default function Nav() {
     }, [])
 
     return (
-        <ul className="menu">
+        <div className="nav_container">
             {
                 menu.map((v,i) => 
-                    <li key={i}>
-                        <NavLink to={v.link}>{v.name}</NavLink>
-                    </li>
+                    <NavLink key={i} to={v.link}>{v.name}</NavLink>
                 )
             }
-        </ul>
+        </div>
     )
 }

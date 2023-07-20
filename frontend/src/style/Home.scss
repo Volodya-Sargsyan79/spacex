@@ -1,0 +1,10 @@
+.home_container {
+    display: flex;
+    .home_container_items{
+        &--first {
+            display: flex;
+            width: 310px;
+            justify-content: space-between;
+        }
+    }
+}

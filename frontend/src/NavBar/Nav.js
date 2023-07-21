@@ -22,19 +22,21 @@ export default function NavBar() {
                 }
             </div>
             <div className="phone_container">
-                <div>
                 <div id="menuToggle">
                     <input type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
+                    <ul id="menu">
+                        {
+                            menu.map((v,i) => 
+                                <li key={i}>
+                                    <NavLink to={v.link}>{v.name}</NavLink>
+                                </li>
+                            )
+                        }
+                    </ul>
                 </div>
-                </div>
-                {/* {
-                    menu.map((v,i) => 
-                        <NavLink key={i} to={v.link}>{v.name}</NavLink>
-                    )
-                } */}
             </div>
         </div>
 

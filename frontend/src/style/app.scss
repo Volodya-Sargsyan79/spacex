@@ -8,9 +8,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     hr {
         border-bottom: none;
         border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .app {
+        height: auto;
     }
 }

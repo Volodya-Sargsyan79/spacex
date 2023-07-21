@@ -13,12 +13,30 @@ export default function NavBar() {
     }, [])
 
     return (
-        <div className="nav_container">
-            {
-                menu.map((v,i) => 
-                    <NavLink key={i} to={v.link}>{v.name}</NavLink>
-                )
-            }
+        <div>
+            <div className="display_container">
+                {
+                    menu.map((v,i) => 
+                        <NavLink key={i} to={v.link}>{v.name}</NavLink>
+                    )
+                }
+            </div>
+            <div className="phone_container">
+                <div>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+                {/* {
+                    menu.map((v,i) => 
+                        <NavLink key={i} to={v.link}>{v.name}</NavLink>
+                    )
+                } */}
+            </div>
         </div>
+
     )
 }

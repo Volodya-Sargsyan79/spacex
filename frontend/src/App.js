@@ -17,6 +17,7 @@ export default function App() {
         <Provider store={store}>
             <div className="app">
                 <Header />
+                <hr/>
                 <Routes>            
                     <Route path="*" element={<Error />} />
                     <Route path="/" element={<Home />} />

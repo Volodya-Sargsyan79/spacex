@@ -1,12 +1,12 @@
 import React from "react";
 import '../style/Items.scss'
 
-export default function Items({classes}) {
+export default function Items({classes, data, name, text}) {
     return (
         <div className={`items_container ${classes}`}>
-            <p>mi</p>
-            <h1>250</h1>
-            <p>nash dvor</p>
+            <p>{name}</p>
+            <h1>{data}</h1>
+            <p>{text}</p>
         </div>
     )
 }

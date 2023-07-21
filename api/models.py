@@ -8,6 +8,6 @@ class Menu(models.Model):
 class Traveling(models.Model):
     name = models.CharField(max_length=20)
     we = models.IntegerField()
-    guarantee = models.IntegerField()
+    guarantee = models.CharField(max_length=5)
     date = models.DateField()
     days = models.IntegerField()

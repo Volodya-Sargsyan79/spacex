@@ -9,4 +9,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    hr {
+        border-bottom: none;
+        border-color: rgba(255, 255, 255, 0.2);
+    }
 }

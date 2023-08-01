@@ -22,9 +22,10 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 735px) {
     .display_container {
         display: none;
+        z-index: 2;
     }
 
     .phone_container {
@@ -65,7 +66,7 @@
                 position: relative;
                 background: #ffffff;
                 border-radius: 3px;
-                z-index: 1;
+                z-index: 2;
                 transform-origin: 5px 0px;
                 transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                             background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -89,6 +90,7 @@
             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
             list-style-type: none;
             text-align: center;
+            z-index: 1;
             a {
                 text-decoration: none;
                 color: #1E1E23;

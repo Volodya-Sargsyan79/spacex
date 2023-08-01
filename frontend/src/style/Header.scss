@@ -1,5 +1,5 @@
 .header_container {
-    width: 50%;
+    width: 1024px;
     margin: auto;
     padding: 0;
     display: flex;
@@ -7,8 +7,21 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 1024px) {
+    .header_container {
+        width: 95%;
+    }
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 850px) {
+    img {
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 735px) {
     .header_container {
         width: 100%;
         img {
